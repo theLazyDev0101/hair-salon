@@ -2,6 +2,10 @@ import React, {Fragment} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import Header from "../Layout/Header";
 import Footer from "../Layout/Footer";
@@ -17,314 +21,314 @@ const Dashboard = () => {
     return (
         <React.Fragment>
             <Header />
-            <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-                <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="w-100" src={ImageName.IMAGE_NAME.carouselOne} alt="Image" />
-                            <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
-                                <div class="mx-sm-5 px-5" style={{ maxWidth: '900px' }}>
-                                    <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">We Will Keep You An Awesome Look</h1>
-                                    <h4 class="text-white text-uppercase mb-4 animated slideInDown"><FontAwesomeIcon icon={faMapMarkerAlt} className="text-primary me-3" size="sm"></FontAwesomeIcon>123 Street, New York, USA</h4>
-                                    <h4 class="text-white text-uppercase mb-4 animated slideInDown"><FontAwesomeIcon icon={faPhoneAlt} className="fa fa-phone-alt text-primary me-3"></FontAwesomeIcon>+012 345 67890</h4>
+            <div className="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+                <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img className="w-100" src={ImageName.IMAGE_NAME.carouselOne} alt="Image" />
+                            <div className="carousel-caption d-flex align-items-center justify-content-center text-start">
+                                <div className="mx-sm-5 px-5" style={{ maxWidth: '900px' }}>
+                                    <h1 className="display-2 text-white text-uppercase mb-4 animated slideInDown">We Will Keep You An Awesome Look</h1>
+                                    <h4 className="text-white text-uppercase mb-4 animated slideInDown"><FontAwesomeIcon icon={faMapMarkerAlt} className="text-primary me-3" size="sm"></FontAwesomeIcon>123 Street, New York, USA</h4>
+                                    <h4 className="text-white text-uppercase mb-4 animated slideInDown"><FontAwesomeIcon icon={faPhoneAlt} className="fa fa-phone-alt text-primary me-3"></FontAwesomeIcon>+012 345 67890</h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="w-100" src={ImageName.IMAGE_NAME.carouselTwo} alt="Image" />
-                            <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
-                                <div class="mx-sm-5 px-5" style={{ maxWidth: '900px' }}>
-                                    <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">Luxury Haircut at Affordable Price</h1>
-                                    <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</h4>
-                                    <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</h4>
+                        <div className="carousel-item">
+                            <img className="w-100" src={ImageName.IMAGE_NAME.carouselTwo} alt="Image" />
+                            <div className="carousel-caption d-flex align-items-center justify-content-center text-start">
+                                <div className="mx-sm-5 px-5" style={{ maxWidth: '900px' }}>
+                                    <h1 className="display-2 text-white text-uppercase mb-4 animated slideInDown">Luxury Haircut at Affordable Price</h1>
+                                    <h4 className="text-white text-uppercase mb-4 animated slideInDown"><FontAwesomeIcon icon={faMapMarkerAlt} className="text-primary me-3" size="sm"></FontAwesomeIcon>123 Street, New York, USA</h4>
+                                    <h4 className="text-white text-uppercase mb-4 animated slideInDown"><FontAwesomeIcon icon={faPhoneAlt} className="fa fa-phone-alt text-primary me-3"></FontAwesomeIcon>+012 345 67890</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    <button className="carousel-control-next" type="button" data-bs-target="#header-carousel"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="row g-5">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="d-flex flex-column">
-                                <img class="img-fluid w-75 align-self-end" src={ImageName.IMAGE_NAME.aboutImg} alt="" />
-                                <div class="w-50 bg-secondary p-5" style={{marginTop: '-25%' }}>
-                                    <h1 class="text-uppercase text-primary mb-3">25 Years</h1>
-                                    <h2 class="text-uppercase mb-0">Experience</h2>
+            <div className="container-xxl py-5">
+                <div className="container">
+                    <div className="row g-5">
+                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div className="d-flex flex-column">
+                                <img className="img-fluid w-75 align-self-end" src={ImageName.IMAGE_NAME.aboutImg} alt="" />
+                                <div className="w-50 bg-secondary p-5" style={{marginTop: '-25%' }}>
+                                    <h1 className="text-uppercase text-primary mb-3">25 Years</h1>
+                                    <h2 className="text-uppercase mb-0">Experience</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <p class="d-inline-block bg-secondary text-primary py-1 px-4">About Us</p>
-                            <h1 class="text-uppercase mb-4">More Than Just A Haircut. Learn More About Us!</h1>
+                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <p className="d-inline-block bg-secondary text-primary py-1 px-4">About Us</p>
+                            <h1 className="text-uppercase mb-4">More Than Just A Haircut. Learn More About Us!</h1>
                             <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                            <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <h3 class="text-uppercase mb-3">Since 1990</h3>
-                                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
+                            <p className="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                            <div className="row g-4">
+                                <div className="col-md-6">
+                                    <h3 className="text-uppercase mb-3">Since 1990</h3>
+                                    <p className="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
                                 </div>
-                                <div class="col-md-6">
-                                    <h3 class="text-uppercase mb-3">1000+ clients</h3>
-                                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
+                                <div className="col-md-6">
+                                    <h3 className="text-uppercase mb-3">1000+ clients</h3>
+                                    <p className="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
-                        <p class="d-inline-block bg-secondary text-primary py-1 px-4">Services</p>
-                        <h1 class="text-uppercase">What We Provide</h1>
+            <div className="container-xxl py-5">
+                <div className="container">
+                    <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
+                        <p className="d-inline-block bg-secondary text-primary py-1 px-4">Services</p>
+                        <h1 className="text-uppercase">What We Provide</h1>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
-                                <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.hairCut} alt="" />
+                    <div className="row g-4">
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div className="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                                <div className="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.hairCut} alt="" />
                                 </div>
-                                <div class="ps-4">
-                                    <h3 class="text-uppercase mb-3">Haircut</h3>
+                                <div className="ps-4">
+                                    <h3 className="text-uppercase mb-3">Haircut</h3>
                                     <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                                    <span class="text-uppercase text-primary">From $15</span>
+                                    <span className="text-uppercase text-primary">From $15</span>
                                 </div>
-                                <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                                <a className="btn btn-square" href=""><FontAwesomeIcon icon={faPlus} className="fa fa-plus text-primary"></FontAwesomeIcon></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
-                                <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.beardTrimImg} alt="" />
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div className="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                                <div className="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.beardTrimImg} alt="" />
                                 </div>
-                                <div class="ps-4">
-                                    <h3 class="text-uppercase mb-3">Beard Trim</h3>
+                                <div className="ps-4">
+                                    <h3 className="text-uppercase mb-3">Beard Trim</h3>
                                     <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                                    <span class="text-uppercase text-primary">From $15</span>
+                                    <span className="text-uppercase text-primary">From $15</span>
                                 </div>
-                                <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                                <a className="btn btn-square" href=""><FontAwesomeIcon icon={faPlus} className="fa fa-plus text-primary"></FontAwesomeIcon></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
-                                <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.mansShave} alt="" />
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div className="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                                <div className="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.mansShave} alt="" />
                                 </div>
-                                <div class="ps-4">
-                                    <h3 class="text-uppercase mb-3">Mans Shave</h3>
+                                <div className="ps-4">
+                                    <h3 className="text-uppercase mb-3">Mans Shave</h3>
                                     <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                                    <span class="text-uppercase text-primary">From $15</span>
+                                    <span className="text-uppercase text-primary">From $15</span>
                                 </div>
-                                <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                                <a className="btn btn-square" href=""><FontAwesomeIcon icon={faPlus} className="fa fa-plus text-primary"></FontAwesomeIcon></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
-                                <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.hairDying} alt="" />
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div className="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                                <div className="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.hairDying} alt="" />
                                 </div>
-                                <div class="ps-4">
-                                    <h3 class="text-uppercase mb-3">Hair Dyeing</h3>
+                                <div className="ps-4">
+                                    <h3 className="text-uppercase mb-3">Hair Dyeing</h3>
                                     <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                                    <span class="text-uppercase text-primary">From $15</span>
+                                    <span className="text-uppercase text-primary">From $15</span>
                                 </div>
-                                <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                                <a className="btn btn-square" href=""><FontAwesomeIcon icon={faPlus} className="fa fa-plus text-primary"></FontAwesomeIcon></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
-                                <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.moustache} alt="" />
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div className="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                                <div className="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.moustache} alt="" />
                                 </div>
-                                <div class="ps-4">
-                                    <h3 class="text-uppercase mb-3">Mustache</h3>
+                                <div className="ps-4">
+                                    <h3 className="text-uppercase mb-3">Mustache</h3>
                                     <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                                    <span class="text-uppercase text-primary">From $15</span>
+                                    <span className="text-uppercase text-primary">From $15</span>
                                 </div>
-                                <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                                <a className="btn btn-square" href=""><FontAwesomeIcon icon={faPlus} className="fa fa-plus text-primary"></FontAwesomeIcon></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
-                                <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.stacking} alt="" />
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div className="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                                <div className="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style={{ width: '60px',  height: '60px' }}>
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.stacking} alt="" />
                                 </div>
-                                <div class="ps-4">
-                                    <h3 class="text-uppercase mb-3">Stacking</h3>
+                                <div className="ps-4">
+                                    <h3 className="text-uppercase mb-3">Stacking</h3>
                                     <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                                    <span class="text-uppercase text-primary">From $15</span>
+                                    <span className="text-uppercase text-primary">From $15</span>
                                 </div>
-                                <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                                <a className="btn btn-square" href=""><FontAwesomeIcon icon={faPlus} className="fa fa-plus text-primary"></FontAwesomeIcon></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="row g-0">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
-                                <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Price & Plan</p>
-                                <h1 class="text-uppercase mb-4">Check Out Our Barber Services And Prices</h1>
+            <div className="container-xxl py-5">
+                <div className="container">
+                    <div className="row g-0">
+                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div className="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                                <p className="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Price & Plan</p>
+                                <h1 className="text-uppercase mb-4">Check Out Our Barber Services And Prices</h1>
                                 <div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Haircut</h6>
-                                        <span class="text-uppercase text-primary">$29.00</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Haircut</h6>
+                                        <span className="text-uppercase text-primary">$29.00</span>
                                     </div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Beard Trim</h6>
-                                        <span class="text-uppercase text-primary">$35.00</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Beard Trim</h6>
+                                        <span className="text-uppercase text-primary">$35.00</span>
                                     </div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Mans Shave</h6>
-                                        <span class="text-uppercase text-primary">$23.00</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Mans Shave</h6>
+                                        <span className="text-uppercase text-primary">$23.00</span>
                                     </div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Hair Dyeing</h6>
-                                        <span class="text-uppercase text-primary">$19.00</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Hair Dyeing</h6>
+                                        <span className="text-uppercase text-primary">$19.00</span>
                                     </div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Mustache</h6>
-                                        <span class="text-uppercase text-primary">$15.00</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Mustache</h6>
+                                        <span className="text-uppercase text-primary">$15.00</span>
                                     </div>
-                                    <div class="d-flex justify-content-between py-2">
-                                        <h6 class="text-uppercase mb-0">Stacking</h6>
-                                        <span class="text-uppercase text-primary">$39.00</span>
+                                    <div className="d-flex justify-content-between py-2">
+                                        <h6 className="text-uppercase mb-0">Stacking</h6>
+                                        <span className="text-uppercase text-primary">$39.00</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="h-100">
-                                <img class="img-fluid h-100" src={ImageName.IMAGE_NAME.price} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
-                        <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Barber</p>
-                        <h1 class="text-uppercase">Meet Our Barber</h1>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.teamOne} alt="" />
-                                    <div class="team-social">
-                                        <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-secondary text-center p-4">
-                                    <h5 class="text-uppercase">Barber Name</h5>
-                                    <span class="text-primary">Designation</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="team-item">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.teamTwo} alt="" />
-                                    <div class="team-social">
-                                        <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-secondary text-center p-4">
-                                    <h5 class="text-uppercase">Barber Name</h5>
-                                    <span class="text-primary">Designation</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="team-item">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.teamThree} alt="" />
-                                    <div class="team-social">
-                                        <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-secondary text-center p-4">
-                                    <h5 class="text-uppercase">Barber Name</h5>
-                                    <span class="text-primary">Designation</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                            <div class="team-item">
-                                <div class="team-img position-relative overflow-hidden">
-                                    <img class="img-fluid" src={ImageName.IMAGE_NAME.teamFour} alt="" />
-                                    <div class="team-social">
-                                        <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bg-secondary text-center p-4">
-                                    <h5 class="text-uppercase">Barber Name</h5>
-                                    <span class="text-primary">Designation</span>
-                                </div>
+                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div className="h-100">
+                                <img className="img-fluid h-100" src={ImageName.IMAGE_NAME.price} alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="row g-0">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="h-100">
-                                <img class="img-fluid h-100" src={ImageName.IMAGE_NAME.open} alt="" />
+            <div className="container-xxl py-5">
+                <div className="container">
+                    <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
+                        <p className="d-inline-block bg-secondary text-primary py-1 px-4">Our Barber</p>
+                        <h1 className="text-uppercase">Meet Our Barber</h1>
+                    </div>
+                    <div className="row g-4">
+                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div className="team-item">
+                                <div className="team-img position-relative overflow-hidden">
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.teamOne} alt="" />
+                                    <div className="team-social">
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faFacebookF} className="fa fa-facebook-f"></FontAwesomeIcon></a>
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faTwitter} className="fa fa-twitter"></FontAwesomeIcon></a>
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faInstagram} className="fa fa-instagram"></FontAwesomeIcon></a>
+                                    </div>
+                                </div>
+                                <div className="bg-secondary text-center p-4">
+                                    <h5 className="text-uppercase">Barber Name</h5>
+                                    <span className="text-primary">Designation</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
-                                <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Working Hours</p>
-                                <h1 class="text-uppercase mb-4">Professional Barbers Are Waiting For You</h1>
+                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div className="team-item">
+                                <div className="team-img position-relative overflow-hidden">
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.teamTwo} alt="" />
+                                    <div className="team-social">
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faFacebookF} className="fa fa-facebook-f"></FontAwesomeIcon></a>
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faTwitter} className="fa fa-twitter"></FontAwesomeIcon></a>
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faInstagram} className="fa fa-instagram"></FontAwesomeIcon></a>
+                                    </div>
+                                </div>
+                                <div className="bg-secondary text-center p-4">
+                                    <h5 className="text-uppercase">Barber Name</h5>
+                                    <span className="text-primary">Designation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div className="team-item">
+                                <div className="team-img position-relative overflow-hidden">
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.teamThree} alt="" />
+                                    <div className="team-social">
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faFacebookF} className="fa fa-facebook-f"></FontAwesomeIcon></a>
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faTwitter} className="fa fa-twitter"></FontAwesomeIcon></a>
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faInstagram} className="fa fa-instagram"></FontAwesomeIcon></a>
+                                    </div>
+                                </div>
+                                <div className="bg-secondary text-center p-4">
+                                    <h5 className="text-uppercase">Barber Name</h5>
+                                    <span className="text-primary">Designation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div className="team-item">
+                                <div className="team-img position-relative overflow-hidden">
+                                    <img className="img-fluid" src={ImageName.IMAGE_NAME.teamFour} alt="" />
+                                    <div className="team-social">
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faFacebookF} className="fa fa-facebook-f"></FontAwesomeIcon></a>
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faTwitter} className="fa fa-twitter"></FontAwesomeIcon></a>
+                                        <a className="btn btn-square" href=""><FontAwesomeIcon icon={faInstagram} className="fa fa-instagram"></FontAwesomeIcon></a>
+                                    </div>
+                                </div>
+                                <div className="bg-secondary text-center p-4">
+                                    <h5 className="text-uppercase">Barber Name</h5>
+                                    <span className="text-primary">Designation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container-xxl py-5">
+                <div className="container">
+                    <div className="row g-0">
+                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div className="h-100">
+                                <img className="img-fluid h-100" src={ImageName.IMAGE_NAME.open} alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div className="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                                <p className="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Working Hours</p>
+                                <h1 className="text-uppercase mb-4">Professional Barbers Are Waiting For You</h1>
                                 <div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Monday</h6>
-                                        <span class="text-uppercase">09 AM - 09 PM</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Monday</h6>
+                                        <span className="text-uppercase">09 AM - 09 PM</span>
                                     </div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Tuesday</h6>
-                                        <span class="text-uppercase">09 AM - 09 PM</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Tuesday</h6>
+                                        <span className="text-uppercase">09 AM - 09 PM</span>
                                     </div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Wednesday</h6>
-                                        <span class="text-uppercase">09 AM - 09 PM</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Wednesday</h6>
+                                        <span className="text-uppercase">09 AM - 09 PM</span>
                                     </div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Thursday</h6>
-                                        <span class="text-uppercase">09 AM - 09 PM</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Thursday</h6>
+                                        <span className="text-uppercase">09 AM - 09 PM</span>
                                     </div>
-                                    <div class="d-flex justify-content-between border-bottom py-2">
-                                        <h6 class="text-uppercase mb-0">Friday</h6>
-                                        <span class="text-uppercase">09 AM - 09 PM</span>
+                                    <div className="d-flex justify-content-between border-bottom py-2">
+                                        <h6 className="text-uppercase mb-0">Friday</h6>
+                                        <span className="text-uppercase">09 AM - 09 PM</span>
                                     </div>
-                                    <div class="d-flex justify-content-between py-2">
-                                        <h6 class="text-uppercase mb-0">Sat / Sun</h6>
-                                        <span class="text-uppercase text-primary">Closed</span>
+                                    <div className="d-flex justify-content-between py-2">
+                                        <h6 className="text-uppercase mb-0">Sat / Sun</h6>
+                                        <span className="text-uppercase text-primary">Closed</span>
                                     </div>
                                 </div>
                             </div>
@@ -332,27 +336,27 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
-                        <p class="d-inline-block bg-secondary text-primary py-1 px-4">Testimonial</p>
-                        <h1 class="text-uppercase">What Our Clients Say!</h1>
+            <div className="container-xxl py-5">
+                <div className="container">
+                    <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
+                        <p className="d-inline-block bg-secondary text-primary py-1 px-4">Testimonial</p>
+                        <h1 className="text-uppercase">What Our Clients Say!</h1>
                     </div>
-                    <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
-                            <h4 class="text-uppercase">Client Name</h4>
-                            <p class="text-primary">Profession</p>
-                            <span class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
+                    <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                        <div className="testimonial-item text-center" data-dot="<img className='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                            <h4 className="text-uppercase">Client Name</h4>
+                            <p className="text-primary">Profession</p>
+                            <span className="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
                         </div>
-                        <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
-                            <h4 class="text-uppercase">Client Name</h4>
-                            <p class="text-primary">Profession</p>
-                            <span class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
+                        <div className="testimonial-item text-center" data-dot="<img className='img-fluid' src='img/testimonial-2.jpg' alt=''>">
+                            <h4 className="text-uppercase">Client Name</h4>
+                            <p className="text-primary">Profession</p>
+                            <span className="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
                         </div>
-                        <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
-                            <h4 class="text-uppercase">Client Name</h4>
-                            <p class="text-primary">Profession</p>
-                            <span class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
+                        <div className="testimonial-item text-center" data-dot="<img className='img-fluid' src='img/testimonial-3.jpg' alt=''>">
+                            <h4 className="text-uppercase">Client Name</h4>
+                            <p className="text-primary">Profession</p>
+                            <span className="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
                         </div>
                     </div>      
                 </div>
