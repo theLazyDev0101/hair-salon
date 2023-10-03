@@ -17,9 +17,10 @@ import '../Style/lib/animate/animate.min.css'
 import '../Style/lib/owlcarousel/assets/owl.carousel.min.css'
 
 const About = (props) => {
+    const {loggedInStatus, loggedInName} = props
     return (
         <React.Fragment>
-            <Header />
+            <Header loggedInStatus={loggedInStatus} loggedInName={loggedInName} />
             <div class="container-xxl py-5">
                 <div class="container">
                     <div class="row g-5">

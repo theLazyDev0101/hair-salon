@@ -17,9 +17,10 @@ import '../Style/lib/animate/animate.min.css'
 import '../Style/lib/owlcarousel/assets/owl.carousel.min.css'
 
 const Price = (props) => {
+    const {loggedInStatus, loggedInName} = props
     return (
         <React.Fragment>
-            <Header />
+            <Header loggedInStatus={loggedInStatus} loggedInName={loggedInName} />
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="row g-0">

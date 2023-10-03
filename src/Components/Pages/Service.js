@@ -17,9 +17,10 @@ import '../Style/lib/animate/animate.min.css'
 import '../Style/lib/owlcarousel/assets/owl.carousel.min.css'
 
 const Service = (props) => {
+    const {loggedInStatus, loggedInName} = props
     return (
         <React.Fragment>
-            <Header />
+            <Header loggedInStatus={loggedInStatus} loggedInName={loggedInName} />
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>

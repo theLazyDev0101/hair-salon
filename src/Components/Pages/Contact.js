@@ -10,9 +10,10 @@ import '../Style/lib/animate/animate.min.css'
 import '../Style/lib/owlcarousel/assets/owl.carousel.min.css'
 
 const Contact = (props) => {
+    const {loggedInStatus, loggedInName} = props
     return (
         <React.Fragment>
-            <Header />
+            <Header loggedInStatus={loggedInStatus} loggedInName={loggedInName} />
             <div>This is Contact Page</div>
             <Footer />
         </React.Fragment>
