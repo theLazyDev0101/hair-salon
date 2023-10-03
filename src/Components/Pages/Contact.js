@@ -9,7 +9,7 @@ import '../Style/css/bootstrap.min.css'
 import '../Style/lib/animate/animate.min.css'
 import '../Style/lib/owlcarousel/assets/owl.carousel.min.css'
 
-const Contact = () => {
+const Contact = (props) => {
     return (
         <React.Fragment>
             <Header />

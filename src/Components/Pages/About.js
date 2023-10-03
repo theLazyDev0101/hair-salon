@@ -16,7 +16,7 @@ import '../Style/css/bootstrap.min.css'
 import '../Style/lib/animate/animate.min.css'
 import '../Style/lib/owlcarousel/assets/owl.carousel.min.css'
 
-const About = () => {
+const About = (props) => {
     return (
         <React.Fragment>
             <Header />
